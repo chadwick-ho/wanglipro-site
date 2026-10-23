@@ -12,3 +12,5 @@ Ce dépôt contient uniquement les pages statiques et les ressources publiques. 
 Le formulaire utilise FormSubmit : le propriétaire doit confirmer l’adresse de réception par le lien d’activation reçu par e-mail. L’affichage d’une confirmation du service ne prouve pas la réception dans la boîte de destination. Le bouton de messagerie et WhatsApp restent disponibles. Aucun secret d’API n’est nécessaire.
 
 Le contenu est maintenu dans le projet WordPress privé, puis réexporté pour les mises à jour. GitHub Pages ne fournit pas d’administration WordPress.
+
+Les deux guides d’achat comportent une trame de devis et une matrice de spécifications téléchargeables (CSV). Le logo officiel a été fourni par WangLi. Les métadonnées de recherche, les informations de partage et les fils d’Ariane décrivent les pages réellement affichées ; aucun prix, certificat ni avis client n’est inventé.
