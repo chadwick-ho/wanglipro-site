@@ -1,0 +1,38 @@
+/* First-screen trust: real evidence remains before the product image on small screens. */
+.wl-evidence-hero{padding-top:42px;padding-bottom:42px}
+.wl-evidence-hero>.wp-block-columns{min-height:0;gap:50px}
+.wl-evidence-hero h1{font-size:clamp(34px,3.2vw,46px);line-height:1.12;letter-spacing:-.035em}
+.wl-evidence-hero .wl-eyebrow{margin-bottom:16px!important;letter-spacing:.09em;font-size:11px}
+.wl-evidence-hero p.wl-lead{margin-top:20px;font-size:17px;line-height:1.65}
+.wl-evidence-hero .wp-block-buttons{margin-top:24px;gap:10px}
+.wl-hero-proof-wrap{margin-top:24px}
+.wl-evidence-hero p.wl-hero-proof-label{margin:0 0 10px;font-size:12px;color:var(--wl-muted)}
+.wl-hero-proofs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.wl-hero-proofs>.wl-hero-proof-card{margin:0;background:#fff;border:1px solid #dce2e3;border-radius:5px;overflow:hidden}
+.wl-hero-proof-wrap>.wl-hero-proofs{margin-top:0}
+.wl-hero-proof-card figure{margin:0!important;border-radius:0;box-shadow:none;background:#fff}
+.wl-hero-proof-card figure img{width:100%;height:72px;aspect-ratio:auto;object-fit:cover;display:block}
+.wl-hero-proof-card:nth-child(2) figure img{object-fit:contain;background:#f1f3f3;padding:3px}
+.wl-evidence-hero .wl-hero-proof-card p{margin:0!important;padding:8px 9px;font-size:11px;line-height:1.45;font-weight:700;min-height:46px}
+.wl-hero-proof-card a{display:block}
+.wl-hero-proof-card a:hover{text-decoration:underline;text-underline-offset:3px}
+.wl-evidence-hero .wl-hero-product{margin:0;box-shadow:12px 12px 0 #e7ded0;background:#eee}
+.wl-evidence-hero .wl-hero-product img{aspect-ratio:1.15;object-fit:contain}
+.wl-evidence-hero p.wl-hero-model-caption{font-size:12px;color:var(--wl-muted);margin-top:22px;text-align:center}
+.editor-styles-wrapper .wl-hero-proofs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:1000px) and (min-width:782px){.wl-evidence-hero>.wp-block-columns{gap:30px}.wl-evidence-hero h1{font-size:38px}.wl-evidence-hero .wl-hero-proof-card p{padding:7px;font-size:10px}}
+@media(max-width:781px){
+ .wl-evidence-hero{padding-top:30px;padding-bottom:34px}
+ .wl-evidence-hero>.wp-block-columns{gap:32px}
+ .wl-evidence-hero h1{font-size:34px;line-height:1.12}
+ .wl-evidence-hero .wl-eyebrow{font-size:10px;margin-bottom:14px!important}
+ .wl-evidence-hero p.wl-lead{font-size:15px;line-height:1.6;margin-top:16px}
+ .wl-evidence-hero .wp-block-buttons{margin-top:20px;gap:8px}
+ .wl-evidence-hero .wp-block-button__link{padding:11px 13px;font-size:12px;min-height:46px}
+ .wl-evidence-hero .wl-hero-proof-wrap{margin-top:20px}
+ .wl-hero-proofs{gap:7px}
+ .wl-hero-proof-card figure img{height:64px}
+ .wl-evidence-hero .wl-hero-proof-card p{font-size:10px;padding:7px;min-height:43px}
+ .wl-evidence-hero .wl-hero-product{max-width:520px;margin-inline:auto}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
