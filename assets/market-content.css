@@ -1,0 +1,12 @@
+/* Shared market-content components; native blocks remain independently editable. */
+.wl-market-category-choice a,.wl-market-category-proof a,.wl-market-category-faq p a,.wl-market-product p a,.wl-market-dealer>p a,.wl-market-project>p a,.wl-market-category-specs>p a{text-decoration:underline;text-underline-offset:3px}
+.wl-market-category-specs .wl-guide-download,.wl-market-product .wl-guide-download{padding:16px;border-left:4px solid var(--wl-orange);background:var(--wl-paper)}
+.wl-market-product .wl-guide-download{background:#fff}
+.wl-market-category-specs table,.wl-market-product table{table-layout:auto}
+@media(max-width:781px){
+ .tax-wangli_category .wl-filters{flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding-bottom:10px;gap:8px}
+ .tax-wangli_category .wl-filters a{white-space:nowrap;flex:0 0 auto;min-height:44px;display:inline-flex;align-items:center}
+ .wl-market-category-choice .wp-block-columns{gap:18px}
+ .wl-market-category-choice .wl-feature{padding:22px}
+ .wl-market-product .wp-block-table,.wl-market-category-specs .wp-block-table{max-width:100%;overflow-x:auto}
+}
