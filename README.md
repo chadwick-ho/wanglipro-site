@@ -14,3 +14,5 @@ Le formulaire utilise FormSubmit : le propriétaire doit confirmer l’adresse d
 Le contenu est maintenu dans le projet WordPress privé, puis réexporté pour les mises à jour. GitHub Pages ne fournit pas d’administration WordPress.
 
 Les deux guides d’achat comportent une trame de devis et une matrice de spécifications téléchargeables (CSV). Le logo officiel a été fourni par WangLi. Les métadonnées de recherche, les informations de partage et les fils d’Ariane décrivent les pages réellement affichées ; aucun prix, certificat ni avis client n’est inventé.
+
+Le **Blog** est disponible sur `/blog/`, avec des catégories, des articles associés et un flux RSS `/blog/feed.xml`. Les articles sont rédigés dans WordPress puis exportés uniquement après validation explicite. La génération du Blog met à jour les listes, les données BlogPosting et le sitemap. Les brouillons et les articles programmés ne sont pas publiés par l’export.
