@@ -18,3 +18,5 @@ Les deux guides d’achat comportent une trame de devis et une matrice de spéci
 Le **Blog** est disponible sur `/blog/`, avec des catégories, des articles associés et un flux RSS `/blog/feed.xml`. Les articles sont rédigés dans WordPress puis exportés uniquement après validation explicite. La génération du Blog met à jour les listes, les données BlogPosting et le sitemap. Les brouillons et les articles programmés ne sont pas publiés par l’export.
 
 Les photographies de l’usine et de la salle d’exposition fournies par WangLi sont présentées sur la page À propos et dans une sélection sur l’accueil. `/certificats/` regroupe les copies de 13 pages en 9 PDF, avec références, périmètres et périodes indiquées. Le document CQC dont la date de fin est dépassée est identifié comme historique. Les copies ne constituent pas une vérification en temps réel auprès des organismes.
+
+La galerie `/production-livraison/` présente 23 photographies distinctes : production et préparation, emballage et stockage, chargement et manutention. Les légendes décrivent les scènes visibles, sans attribuer de clients, de commandes ni de résultats non documentés.

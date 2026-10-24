@@ -1,0 +1,11 @@
+.wl-production-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;margin-top:30px}
+.wl-production-grid figure{min-width:0;margin:0}
+.wl-production-photo a{display:flex;align-items:center;justify-content:center;background:#f0f0ec;border:1px solid #e1e4e2;aspect-ratio:4/3;border-radius:4px;overflow:hidden}
+.wl-production-photo img{display:block;width:100%;height:100%;object-fit:contain}
+.wl-production-photo figcaption{font-size:14px;line-height:1.5;margin-top:12px;font-weight:600;color:#142c3a;text-align:left}
+.wl-production-intro{font-size:15px;color:#59646a}
+.wl-production-link{font-size:15px;margin-top:30px!important}
+.wl-production-link a{text-decoration:underline;text-underline-offset:4px;font-weight:600}
+.wl-production-section{scroll-margin-top:20px}
+@media(max-width:1000px){.wl-production-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}}
+@media(max-width:540px){.wl-production-grid{grid-template-columns:1fr;gap:26px}.wl-production-photo figcaption{font-size:14px}}
