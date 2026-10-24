@@ -1,0 +1,30 @@
+/* Factory photographs and document copies share the existing WangLi design. */
+.wl-evidence-breadcrumb{padding:22px max(32px,calc((100vw - 1200px)/2));margin:0;font-size:13px;color:#59646a}
+.wl-cert-card .is-style-outline .wp-block-button__link{border:1px solid #aab7bc}
+.wl-evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:28px}
+.wl-evidence-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.wl-evidence-grid>*{min-width:0;margin:0}
+.wl-evidence-building img,.wl-evidence-photo img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;border-radius:4px}
+.wl-evidence-photo figcaption{font-size:15px;line-height:1.5;font-weight:600;margin:12px 0 0;color:#142c3a}
+.wl-evidence-photo a{display:block}
+.wl-home-evidence .wp-block-columns,.wl-proof-evidence .wp-block-columns,.wl-evidence-project .wp-block-columns{align-items:center;gap:48px}
+.wl-evidence-preview{margin-top:0;gap:20px;align-items:start}
+.wl-evidence-preview img{display:block;width:100%;height:auto;max-height:360px;object-fit:contain;background:#fff;border:1px solid #e2e3df;padding:12px}
+.wl-evidence-preview figure{margin:0}
+.wl-cert-card{display:grid;grid-template-columns:160px minmax(0,1fr);gap:24px;padding:28px;background:#fff;border:1px solid #e1e4e2;border-radius:4px;align-items:start}
+.wl-cert-card .wl-cert-image{margin:0}
+.wl-cert-card .wl-cert-image img{display:block;width:100%;height:auto;background:#f6f4ef;border:1px solid #e1e4e2}
+.wl-cert-copy{min-width:0}
+.wl-cert-copy h3{font-size:23px;line-height:1.25;margin:8px 0 18px}
+.wl-cert-copy p{font-size:15px;line-height:1.65;margin:0 0 14px}
+.wl-cert-copy .wl-eyebrow{font-size:11px;color:#9d5725;letter-spacing:.08em}
+.wl-cert-reference{overflow-wrap:anywhere}
+.wl-cert-note{color:#59646a}
+.wl-cert-copy .wp-block-buttons{margin-top:18px}
+.wl-cert-copy .wp-block-button__link{font-size:13px;padding:12px 15px;white-space:normal}
+.wl-evidence-intro{max-width:900px;margin-top:28px!important;font-size:15px!important;color:#59646a}
+.wl-cert-archives .wl-cert-card{max-width:850px;margin-top:28px;border-left:4px solid #9a714c}
+.wl-cert-historical .wl-eyebrow{color:#885721}
+@media(max-width:1050px){.wl-cert-card{grid-template-columns:105px minmax(0,1fr);padding:20px;gap:18px}.wl-evidence-grid{gap:20px}.wl-cert-copy h3{font-size:21px}}
+@media(max-width:780px){.wl-cert-grid{grid-template-columns:1fr}.wl-cert-card{grid-template-columns:140px minmax(0,1fr)}.wl-home-evidence .wp-block-columns,.wl-proof-evidence .wp-block-columns,.wl-evidence-project .wp-block-columns{gap:28px}.wl-evidence-three{grid-template-columns:1fr}}
+@media(max-width:520px){.wl-evidence-grid{grid-template-columns:1fr}.wl-evidence-two{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.wl-cert-card{grid-template-columns:1fr;padding:22px}.wl-cert-card .wl-cert-image{max-width:175px}.wl-cert-copy h3{font-size:23px}.wl-evidence-preview img{padding:6px}.wl-evidence-photo figcaption{font-size:14px}}
