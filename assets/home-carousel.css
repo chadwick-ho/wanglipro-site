@@ -1,0 +1,73 @@
+/* Homepage only. Content and real images remain editable Gutenberg blocks. */
+.wl-home-carousel.wl-section{padding:0;background:#102b3b;color:#fff}
+.wl-home-carousel.wl-section>*{max-width:none;margin:0}
+.wl-home-carousel .wl-carousel-track{display:grid}
+.wl-home-carousel .wl-carousel-slide{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr 1fr;min-height:490px;margin:0!important;background:#102b3b;overflow:hidden}
+.wl-home-carousel .wl-carousel-slide[hidden]{display:none!important}
+.wl-home-carousel .wl-carousel-copy{position:relative;z-index:2;align-self:center;padding:44px 36px 60px max(32px,calc((100vw - 1200px)/2));max-width:760px}
+.wl-home-carousel .wl-eyebrow{color:#ffc18d;font-size:11px;letter-spacing:.085em;margin:0 0 20px!important}
+.wl-home-carousel .wl-slide-title{font-size:clamp(34px,3.4vw,50px);line-height:1.12;letter-spacing:-.035em;color:#fff;margin:0;max-width:620px}
+.wl-home-carousel p.wl-slide-lead{font-size:17px;line-height:1.65;color:#e0e7eb;margin:22px 0 0;max-width:490px}
+.wl-home-carousel .wp-block-buttons{margin-top:26px;gap:10px}
+.wl-home-carousel .wp-block-button__link{min-height:48px;padding:12px 19px;font-size:13px}
+.wl-home-carousel .is-style-outline .wp-block-button__link{border-color:#bbc9cf;color:#fff}
+.wl-home-carousel figure.wl-carousel-image{margin:0!important;border-radius:0;box-shadow:none;background:#ebeae5;overflow:hidden}
+.wl-home-carousel .wl-carousel-image img{display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+.wl-home-carousel .wl-slide-model .wl-carousel-image{position:absolute;inset:0 0 0 50%;display:flex;align-items:center;justify-content:center}
+.wl-home-carousel .wl-slide-model .wl-carousel-image img{object-fit:contain;width:min(100%,670px);height:440px;padding:28px}
+.wl-home-carousel .wl-slide-factory .wl-carousel-image,.wl-home-carousel .wl-slide-loading .wl-carousel-image{position:absolute;inset:0;z-index:-2}
+.wl-home-carousel .wl-slide-factory:after,.wl-home-carousel .wl-slide-loading:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0d2434 0%,#0d2434ed 34%,#0d24349e 53%,#0d243410 80%)}
+.wl-home-carousel .wl-slide-factory .wl-carousel-image img{object-position:center 58%}
+.wl-home-carousel .wl-slide-loading .wl-carousel-image img{object-position:center 54%}
+.wl-home-carousel p.wl-slide-caption{position:absolute;right:max(24px,calc((100vw - 1200px)/2));bottom:17px;max-width:46%;margin:0;padding:6px 10px;background:#0d2434dc;color:#fff;font-size:11px;line-height:1.4;z-index:2;border-radius:3px}
+.wl-home-carousel .wl-slide-model p.wl-slide-caption{color:#364c58;background:#fff9}
+.wl-home-carousel .wl-carousel-controls{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px max(32px,calc((100vw - 1200px)/2));background:#102b3b;border-top:1px solid #ffffff2e}
+.wl-carousel-selectors{display:flex;gap:12px;flex:1}
+.wl-home-carousel .wl-carousel-selector{min-height:48px;border:0;border-bottom:2px solid transparent;color:#becdd5;background:none;text-align:left;padding:8px 14px 8px 0;font-size:12px;font-weight:700;line-height:1.45;cursor:pointer}
+.wl-home-carousel .wl-carousel-selector[aria-pressed=true]{color:#fff;border-color:#ef974e}
+.wl-carousel-transport{display:flex;gap:6px}
+.wl-home-carousel .wl-carousel-arrow,.wl-home-carousel .wl-carousel-play{display:flex;align-items:center;justify-content:center;width:48px;height:48px;background:transparent;border:1px solid #6a8492;border-radius:3px;color:#fff;font-size:21px;cursor:pointer}
+.wl-home-carousel button:hover{background:#ffffff0e;color:#fff}
+.wl-home-carousel button:focus-visible{outline:3px solid #ffbd82;outline-offset:2px}
+.wl-carousel-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.wl-home-carousel .wl-carousel-proofs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:14px max(32px,calc((100vw - 1200px)/2));gap:26px;background:#fff;color:#183340;border-bottom:1px solid #dce2e3}
+.wl-home-carousel .wl-carousel-proof{display:flex;gap:14px;align-items:center;min-width:0;margin:0!important}
+.wl-home-carousel .wl-proof-image a{display:block}
+.wl-home-carousel .wl-proof-image{flex:0 0 72px;box-shadow:none;border-radius:3px;background:#f5f5f0;margin:0!important}
+.wl-home-carousel .wl-proof-image img{display:block;width:72px;height:50px;aspect-ratio:auto;object-fit:cover}
+.wl-home-carousel .wl-carousel-proof:nth-child(2) img{object-fit:contain;padding:2px}
+.wl-home-carousel .wl-carousel-proof p{font-size:13px;font-weight:700;margin:0!important;line-height:1.5}
+.wl-home-carousel .wl-carousel-proof a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(min-width:1600px){.wl-home-carousel .wl-carousel-copy{padding-right:70px}.wl-home-carousel .wl-carousel-slide{min-height:520px}}
+@media(max-width:1100px) and (min-width:701px){.wl-home-carousel .wl-carousel-slide{min-height:520px}.wl-home-carousel .wl-carousel-copy{padding:36px 24px 55px 32px}.wl-home-carousel .wl-slide-title{font-size:38px}.wl-home-carousel .wl-slide-lead{font-size:16px}.wl-home-carousel .wp-block-buttons{flex-direction:column;align-items:flex-start}.wl-home-carousel .wl-carousel-selector{font-size:11px;padding-right:8px}.wl-carousel-selectors{gap:8px}.wl-home-carousel .wl-carousel-proofs{gap:14px}.wl-home-carousel .wl-carousel-proof{gap:9px}.wl-home-carousel .wl-carousel-proof p{font-size:12px}}
+@media(max-width:700px){
+ .wl-home-carousel .wl-carousel-slide{display:flex;flex-direction:column;min-height:450px}
+ .wl-home-carousel .wl-carousel-copy{order:2;align-self:stretch;padding:22px 22px 24px;flex:1;max-width:none}
+ .wl-home-carousel .wl-eyebrow{font-size:9px;letter-spacing:.055em;margin-bottom:12px!important}
+ .wl-home-carousel .wl-slide-title{font-size:30px;line-height:1.12}
+ .wl-home-carousel p.wl-slide-lead{font-size:14px;line-height:1.55;margin-top:13px;max-width:none}
+ .wl-home-carousel .wp-block-buttons{margin-top:18px;gap:8px}
+ .wl-home-carousel .wp-block-button__link{padding:10px 12px;font-size:11px;min-height:48px}
+ .wl-home-carousel .wl-carousel-slide .wl-carousel-image{position:relative;inset:auto;z-index:0;order:0;height:160px;flex:0 0 160px;display:flex;background:#ebeae5}
+ .wl-home-carousel .wl-slide-model .wl-carousel-image img{width:100%;height:160px;padding:6px;object-fit:contain}
+ .wl-home-carousel .wl-slide-factory:after,.wl-home-carousel .wl-slide-loading:after{display:none}
+ .wl-home-carousel .wl-carousel-slide p.wl-slide-caption{position:relative;right:auto;bottom:auto;order:1;max-width:none;background:#203e50;color:#f3f5f6;padding:7px 22px;font-size:9px;line-height:1.35;border-radius:0}
+ .wl-home-carousel .wl-carousel-controls{padding:6px 18px;gap:8px;flex-wrap:nowrap}
+ .wl-carousel-selectors{gap:8px;flex:1;justify-content:space-between}
+ .wl-home-carousel .wl-carousel-selector{font-size:10px;min-height:48px;flex:1;padding:5px 0;text-align:left}
+ .wl-carousel-transport{margin-left:auto;gap:7px}
+ .wl-home-carousel .wl-carousel-arrow{display:none}
+ .wl-home-carousel .wl-carousel-play{height:48px;width:48px;font-size:18px}
+ .wl-home-carousel .wl-carousel-proofs{padding:12px 18px;gap:10px}
+ .wl-home-carousel .wl-carousel-proof{flex-direction:column;align-items:flex-start;gap:5px}
+ .wl-home-carousel .wl-proof-image{flex:0 0 auto}
+ .wl-home-carousel .wl-proof-image img{width:52px;height:32px}
+ .wl-home-carousel .wl-carousel-proof p{font-size:10px;line-height:1.4}
+}
+/* Editor: show every native slide so the owner can edit each part independently. */
+.editor-styles-wrapper .wl-home-carousel .wl-carousel-slide{display:flex!important;flex-direction:column;min-height:0;padding:22px;margin-bottom:20px}
+.editor-styles-wrapper .wl-home-carousel .wl-carousel-copy{padding:12px;max-width:none}
+.editor-styles-wrapper .wl-home-carousel .wl-carousel-image{position:relative!important;inset:auto!important;z-index:0!important;max-height:280px!important}
+.editor-styles-wrapper .wl-home-carousel .wl-carousel-image img{object-fit:contain;height:260px!important}
+.editor-styles-wrapper .wl-home-carousel p.wl-slide-caption{position:static!important;max-width:none}
+@media(prefers-reduced-motion:reduce){.wl-home-carousel *{scroll-behavior:auto!important}}
