@@ -19,14 +19,17 @@
 .wl-home-carousel .wl-slide-factory:after,.wl-home-carousel .wl-slide-loading:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0d2434 0%,#0d2434ed 34%,#0d24349e 53%,#0d243410 80%)}
 .wl-home-carousel .wl-slide-factory .wl-carousel-image img{object-position:center 58%}
 .wl-home-carousel .wl-slide-loading .wl-carousel-image img{object-position:center 54%}
-.wl-home-carousel .wl-slide-documents{position:absolute;z-index:2;top:38px;bottom:62px;left:55%;right:max(32px,calc((100vw - 1200px)/2));display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:14px;margin:0}
-.wl-home-carousel .wl-slide-document{display:flex;flex-direction:column;gap:7px;align-items:center;background:#fff;border:1px solid #dfe4e7;border-radius:4px;padding:12px 10px;color:#183340;min-width:0;margin:0!important;box-shadow:0 6px 20px #07192533}
+.wl-home-carousel .wl-slide-documents{position:absolute;z-index:2;top:22px;bottom:48px;left:55%;right:max(32px,calc((100vw - 1200px)/2));display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:10px;margin:0}
+.wl-home-carousel .wl-slide-document{display:flex;flex-direction:column;gap:3px;align-items:center;justify-content:center;background:#fff;border:1px solid #dfe4e7;border-radius:4px;padding:5px 6px;color:#183340;min-width:0;margin:0!important;box-shadow:0 6px 20px #07192533}
 .wl-home-carousel figure.wl-slide-document-image{margin:0!important;border-radius:0;box-shadow:none;background:#fff;width:100%}
 .wl-home-carousel .wl-slide-document-image a{display:block}
-.wl-home-carousel .wl-slide-document-image img{display:block;width:100%;height:270px;aspect-ratio:auto;object-fit:contain}
-.wl-home-carousel p.wl-document-label{font-size:13px;font-weight:700;line-height:1.3;text-align:center;margin:0!important}
-.wl-home-carousel p.wl-document-scope{font-size:10px;line-height:1.4;color:#52616a;text-align:center;margin:0!important}
+.wl-home-carousel .wl-slide-document-image img{display:block;width:100%;height:84px;aspect-ratio:auto;object-fit:contain}
+.wl-home-carousel p.wl-document-label{font-size:11px;font-weight:700;line-height:1.3;text-align:center;margin:0!important}
+.wl-home-carousel p.wl-document-scope{font-size:8.5px;line-height:1.3;color:#52616a;text-align:center;margin:0!important}
+.wl-home-carousel .wl-document-historical{background:#fff5e8;border-color:#e6a956}
+.wl-home-carousel .wl-document-historical .wl-document-scope{color:#924500;font-weight:700}
 .wl-home-carousel .wl-document-label a:hover{text-decoration:underline;text-underline-offset:3px}
+.wl-home-carousel .wl-slide-documents:focus-visible{outline:2px solid #ffc18d;outline-offset:3px}
 .wl-home-carousel p.wl-slide-caption{position:absolute;right:max(24px,calc((100vw - 1200px)/2));bottom:17px;max-width:46%;margin:0;padding:6px 10px;background:#0d2434dc;color:#fff;font-size:11px;line-height:1.4;z-index:2;border-radius:3px}
 .wl-home-carousel .wl-slide-model p.wl-slide-caption{color:#364c58;background:#fff9}
 .wl-home-carousel .wl-carousel-controls{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px max(32px,calc((100vw - 1200px)/2));background:#102b3b;border-top:1px solid #ffffff2e}
@@ -49,6 +52,7 @@
 @media(min-width:1600px){.wl-home-carousel .wl-carousel-copy{padding-right:70px}.wl-home-carousel .wl-carousel-slide{min-height:520px}}
 @media(max-width:1100px) and (min-width:701px){.wl-home-carousel .wl-carousel-slide{min-height:520px}.wl-home-carousel .wl-carousel-copy{padding:36px 24px 55px 32px}.wl-home-carousel .wl-slide-title{font-size:38px}.wl-home-carousel .wl-slide-lead{font-size:16px}.wl-home-carousel .wp-block-buttons{flex-direction:column;align-items:flex-start}.wl-home-carousel .wl-carousel-selector{font-size:11px;padding-right:8px}.wl-carousel-selectors{gap:8px}.wl-home-carousel .wl-carousel-proofs{gap:14px}.wl-home-carousel .wl-carousel-proof{gap:9px}.wl-home-carousel .wl-carousel-proof p{font-size:12px}}
 @media(min-width:701px) and (max-width:900px){.wl-home-carousel .wl-slide-factory .wl-slide-title{font-size:34px}}
+@media(min-width:701px) and (max-width:1100px){.wl-home-carousel .wl-slide-document-image img{height:76px}.wl-home-carousel p.wl-document-label{font-size:10px}.wl-home-carousel p.wl-document-scope{font-size:8px}}
 @media(max-width:700px){
  .wl-home-carousel .wl-carousel-slide{display:flex;flex-direction:column;min-height:450px}
  .wl-home-carousel .wl-carousel-copy{order:2;align-self:stretch;padding:22px 22px 24px;flex:1;max-width:none}
@@ -72,10 +76,10 @@
  .wl-home-carousel .wl-proof-image{flex:0 0 auto}
  .wl-home-carousel .wl-proof-image img{width:52px;height:32px}
  .wl-home-carousel .wl-carousel-proof p{font-size:10px;line-height:1.4}
- .wl-home-carousel .wl-slide-documents{top:5px;bottom:auto;left:18px;right:18px;height:150px;gap:10px}
- .wl-home-carousel .wl-slide-document{padding:5px;gap:3px;align-self:stretch;justify-content:center}
- .wl-home-carousel .wl-slide-document-image img{height:104px}
- .wl-home-carousel p.wl-document-label{font-size:11px}
+ .wl-home-carousel .wl-slide-documents{top:5px;bottom:auto;left:18px;right:18px;height:150px;gap:10px;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:calc((100% - 20px)/3);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:thin;padding-bottom:5px}
+ .wl-home-carousel .wl-slide-document{padding:5px;gap:3px;align-self:stretch;justify-content:center;scroll-snap-align:start}
+ .wl-home-carousel .wl-slide-document-image img{height:88px}
+ .wl-home-carousel p.wl-document-label{font-size:10px}
  .wl-home-carousel p.wl-document-scope{font-size:8px;line-height:1.2}
 }
 /* Editor: show every native slide so the owner can edit each part independently. */

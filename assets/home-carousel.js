@@ -10,6 +10,11 @@
     root.setAttribute('role', 'region');
     root.setAttribute('aria-roledescription', 'carrousel');
     root.setAttribute('aria-label', 'Préparer votre achat de mobilier scolaire');
+    root.querySelectorAll('.wl-slide-documents').forEach(gallery => {
+      gallery.tabIndex = 0;
+      gallery.setAttribute('role', 'region');
+      gallery.setAttribute('aria-label', `${gallery.querySelectorAll('.wl-slide-document').length} documents — faites défiler les copies sur mobile`);
+    });
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let current = 0, paused = reducedMotion.matches, timer;
     const controls = document.createElement('div');
@@ -64,7 +69,7 @@
     root.addEventListener('focusout', schedule);
     root.addEventListener('touchstart', pause, { passive: true });
     root.addEventListener('keydown', event => {
-      if (event.ctrlKey || event.metaKey || event.altKey || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key) || /INPUT|TEXTAREA|SELECT/.test(event.target.tagName)) return;
+      if (event.target.closest('.wl-slide-documents') || event.ctrlKey || event.metaKey || event.altKey || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key) || /INPUT|TEXTAREA|SELECT/.test(event.target.tagName)) return;
       event.preventDefault();
       show(event.key === 'Home' ? 0 : event.key === 'End' ? slides.length - 1 : current + (event.key === 'ArrowLeft' ? -1 : 1), true);
     });
