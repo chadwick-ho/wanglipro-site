@@ -17,7 +17,7 @@
     controls.setAttribute('aria-label', 'Commandes du carrousel');
     const tabs = document.createElement('div');
     tabs.className = 'wl-carousel-selectors';
-    const labels = ['Modèles & quantités', 'Dossier & échantillon', 'Emballage & livraison'];
+    const labels = ['Modèles & quantités', 'Certificats & dossier', 'Emballage & livraison'];
     const button = (text, label, className) => {
       const b = document.createElement('button'); b.type = 'button'; b.textContent = text;
       b.setAttribute('aria-label', label); b.className = className; return b;
