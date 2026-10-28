@@ -13,7 +13,7 @@
     root.querySelectorAll('.wl-slide-documents').forEach(gallery => {
       gallery.tabIndex = 0;
       gallery.setAttribute('role', 'region');
-      gallery.setAttribute('aria-label', `${gallery.querySelectorAll('.wl-slide-document').length} documents — faites défiler les copies sur mobile`);
+      gallery.setAttribute('aria-label', `${gallery.querySelectorAll('.wl-slide-document').length} documents — faites défiler les copies`);
     });
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let current = 0, paused = reducedMotion.matches, timer;

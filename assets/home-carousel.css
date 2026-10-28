@@ -108,3 +108,19 @@
 .editor-styles-wrapper .wl-home-carousel p.wl-slide-caption{position:static!important;max-width:none}
 .editor-styles-wrapper .wl-home-carousel .wl-slide-documents{position:static;max-width:600px;margin:16px auto}
 @media(prefers-reduced-motion:reduce){.wl-home-carousel *{scroll-behavior:auto!important}}
+/* Larger document previews; scroll through all nine without compressing them. */
+.wl-home-carousel .wl-slide-documents{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(150px,42%);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;gap:0;padding:14px;scrollbar-width:thin;scrollbar-color:#a4bac4 #102b3b}
+.wl-home-carousel .wl-slide-document,.wl-home-carousel .wl-document-historical{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;min-width:0;padding:12px;border:0;border-right:1px solid #829da329;grid-column:auto;scroll-snap-align:start}
+.wl-home-carousel figure.wl-slide-document-image{width:min(100%,145px);flex:0 0 auto;grid-column:auto;grid-row:auto}
+.wl-home-carousel .wl-slide-document-image img{width:100%;height:210px;object-fit:contain}
+.wl-home-carousel p.wl-document-label,.wl-home-carousel p.wl-document-scope,.wl-home-carousel .wl-document-historical .wl-document-label,.wl-home-carousel .wl-document-historical .wl-document-scope{grid-column:auto;grid-row:auto;align-self:center;text-align:center;font-size:12px;line-height:1.35}
+.wl-home-carousel p.wl-document-scope,.wl-home-carousel .wl-document-historical .wl-document-scope{font-size:11px}
+@media(max-width:700px){
+ .wl-home-carousel .wl-slide-factory .wl-carousel-image{height:250px;flex-basis:250px}
+ .wl-home-carousel .wl-slide-documents{top:5px;bottom:auto;height:240px;grid-auto-columns:minmax(140px,48%);padding:5px}
+ .wl-home-carousel .wl-slide-document,.wl-home-carousel .wl-document-historical{padding:6px;gap:4px}
+ .wl-home-carousel figure.wl-slide-document-image{width:min(100%,105px)}
+ .wl-home-carousel .wl-slide-document-image img{height:150px}
+ .wl-home-carousel p.wl-document-label,.wl-home-carousel .wl-document-historical .wl-document-label{font-size:11px}
+ .wl-home-carousel p.wl-document-scope,.wl-home-carousel .wl-document-historical .wl-document-scope{font-size:10px}
+}
