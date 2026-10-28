@@ -14,6 +14,17 @@
       gallery.tabIndex = 0;
       gallery.setAttribute('role', 'region');
       gallery.setAttribute('aria-label', `${gallery.querySelectorAll('.wl-slide-document').length} documents — faites défiler les copies`);
+      const documents = [...gallery.querySelectorAll('.wl-slide-document')];
+      const nav = document.createElement('div'); nav.className = 'wl-document-nav';
+      const prev = document.createElement('button'); const next = document.createElement('button');
+      const count = document.createElement('span'); count.className = 'wl-document-count';
+      prev.type = next.type = 'button'; prev.textContent = '←'; next.textContent = '→';
+      prev.setAttribute('aria-label', 'Certificat précédent'); next.setAttribute('aria-label', 'Certificat suivant');
+      const update = () => { const i = Math.max(0, Math.min(documents.length - 1, Math.round(gallery.scrollLeft / gallery.clientWidth))); count.textContent = `${i + 1} / ${documents.length}`; prev.disabled = i === 0; next.disabled = i === documents.length - 1; };
+      const move = (direction) => { gallery.scrollBy({left: direction * gallery.clientWidth, behavior: 'smooth'}); };
+      prev.addEventListener('click', () => move(-1)); next.addEventListener('click', () => move(1));
+      gallery.addEventListener('scroll', update, {passive:true});
+      nav.append(prev, count, next); gallery.after(nav); update();
     });
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let current = 0, paused = reducedMotion.matches, timer;

@@ -100,6 +100,25 @@
  .wl-home-carousel .wl-slide-documents::-webkit-scrollbar-track{background:#102b3b}
  .wl-home-carousel .wl-slide-documents::-webkit-scrollbar-thumb{background:#829da3;border-radius:3px}
 }
+/* A single prominent document with explicit previous/next controls. */
+.wl-home-carousel .wl-slide-documents{grid-auto-columns:100%;padding:10px 0 42px;scrollbar-width:none}
+.wl-home-carousel .wl-slide-documents::-webkit-scrollbar{display:none}
+.wl-home-carousel .wl-slide-document,.wl-home-carousel .wl-document-historical{border:0;padding:4px 18px;justify-content:center;gap:5px}
+.wl-home-carousel figure.wl-slide-document-image{width:min(100%,200px)}
+.wl-home-carousel .wl-slide-document-image img{height:275px}
+.wl-home-carousel p.wl-document-label,.wl-home-carousel .wl-document-historical .wl-document-label{font-size:15px}
+.wl-home-carousel p.wl-document-scope,.wl-home-carousel .wl-document-historical .wl-document-scope{font-size:12px}
+.wl-home-carousel .wl-document-nav{position:absolute;z-index:3;left:55%;right:max(32px,calc((100vw - 1200px)/2));bottom:65px;display:flex;justify-content:center;align-items:center;gap:18px;color:#fff}
+.wl-home-carousel .wl-document-nav button{width:38px;height:32px;border:1px solid #8da8b4;border-radius:4px;color:#fff;background:#18394a;cursor:pointer;font-size:19px;line-height:1}
+.wl-home-carousel .wl-document-nav button:disabled{opacity:.35;cursor:default}
+.wl-home-carousel .wl-document-count{font-size:12px;font-weight:700}
+@media(max-width:700px){
+ .wl-home-carousel .wl-slide-factory .wl-carousel-image{height:310px;flex-basis:310px}
+ .wl-home-carousel .wl-slide-documents{height:300px;grid-auto-columns:100%;padding:5px 0 38px}
+ .wl-home-carousel figure.wl-slide-document-image{width:min(100%,145px)}
+ .wl-home-carousel .wl-slide-document-image img{height:205px}
+ .wl-home-carousel .wl-document-nav{left:18px;right:18px;top:260px;bottom:auto}
+}
 /* Editor: show every native slide so the owner can edit each part independently. */
 .editor-styles-wrapper .wl-home-carousel .wl-carousel-slide{display:flex!important;flex-direction:column;min-height:0;padding:22px;margin-bottom:20px}
 .editor-styles-wrapper .wl-home-carousel .wl-carousel-copy{padding:12px;max-width:none}
